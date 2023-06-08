@@ -12,3 +12,5 @@ Excelworkbook=openpyxl.load_workbook("H:\Documentos\Practica Pyhton Bond Arg\Dat
 Excelsheet=Excelworkbook.active
 
 bondarg=pd.DataFrame(Excelsheet.values)
+
+print(bondarg)
