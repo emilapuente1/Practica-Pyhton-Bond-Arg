@@ -11,7 +11,7 @@ import pandas as pd
 from openpyxl import Workbook
 
 
-Excelworkbook=openpyxl.load_workbook("D:\Documentos\GitHub\Practica-Pyhton-Bond-Arg\Dataset bonos arg usd.xlsx")
+Excelworkbook=openpyxl.load_workbook("H:\Documentos\Practica Pyhton Bond Arg\Dataset bonos arg usd.xlsx")
 Excelsheet=Excelworkbook.active
 
 #obtener los titulos
@@ -33,3 +33,6 @@ media_41_30=bondarg["Diferencia Precio 41-30"].mean()
 
 # nuevoexcel=bondarg
 # nuevoexcel.save("datasetarg.xlsx")
+
+bono38=bondarg.iloc[0:,5
+                    ]
