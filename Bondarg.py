@@ -33,6 +33,24 @@ media_41_30=bondarg["Diferencia Precio 41-30"].mean()
 
 # nuevoexcel=bondarg
 # nuevoexcel.save("datasetarg.xlsx")
-
+# como navegar por columnas con el iloc con cordenas
 bono38=bondarg.iloc[0:,5
                     ]
+# copiar un "Dataframe" y pegarlo en otro lado Copia 2 
+
+# copia2
+# bondarg2=bondarg
+
+# # altero el original solo con la columna 
+# bondarg=bondarg[" AE38D "]
+
+bondarg_head10=bondarg[["Date"," AE38D "]].head(10)
+bondarg_tail10=bondarg[["Date"," AE38D "]].tail(10)
+
+bondarg_combinado=bondarg_head10.append(bondarg_tail10)
+
+
+bondarg_combinado2= bondarg_head10.append(\
+        [bondarg_tail10,bondarg_head10]    \
+         )
+    
